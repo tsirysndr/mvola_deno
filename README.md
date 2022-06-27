@@ -1,5 +1,8 @@
 # MVola
 
+[![deno module](https://shield.deno.dev/x/mvola)](https://deno.land/x/mvola)
+![deno compatibility](https://shield.deno.dev/deno/^1.22)
+
 [MVola](https://www.mvola.mg/devportal) Deno client library.
 
 ## Usage
