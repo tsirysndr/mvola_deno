@@ -10,7 +10,7 @@ Import the module and initialise the Client class
 import {
   Client,
   SANDBOX_URL,
-} from "https://deno.land/x/mvola@0.0.1/mod.ts";
+} from "https://deno.land/x/mvola@0.0.2/mod.ts";
 
 const mvola = new Client(SANDBOX_URL);
 ```
