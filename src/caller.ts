@@ -26,7 +26,7 @@ export class Caller {
       body: options.body,
       headers,
     });
-    if (response.status == 500) {
+    if (response.status != 200) {
       throw new Error(await response.text());
     }
     return response.json();
