@@ -1,4 +1,4 @@
-import { Client, SANDBOX_URL } from "../mod.ts";
+import { Client, SANDBOX_URL } from "https://deno.land/x/mvola@0.0.1/mod.ts";
 
 async function main() {
   const mvola = new Client(SANDBOX_URL);
