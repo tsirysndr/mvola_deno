@@ -7,7 +7,7 @@
 
 ## Usage
 
-Import the module and initialise the Client class
+Import the module and initialize the Client class
 
 ```typescript
 import {
