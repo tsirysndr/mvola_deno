@@ -15,7 +15,7 @@ export class Caller {
     this.baseUrl = url;
   }
 
-  protected async fetch(path: string, options: RequestOptions) {
+  async fetch(path: string, options: RequestOptions) {
     const url = `${this.baseUrl}${path}`;
     const headers = { ...this.headers, ...options.headers };
     if (this.accessToken) {

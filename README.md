@@ -2,6 +2,8 @@
 
 [![deno module](https://shield.deno.dev/x/mvola)](https://deno.land/x/mvola)
 ![deno compatibility](https://shield.deno.dev/deno/^1.22)
+[![](https://img.shields.io/github/workflow/status/tsirysndr/mvola_deno/CI)](https://github.com/tsirysndr/mvola_deno/actions)
+[![](https://img.shields.io/codecov/c/gh/tsirysndr/mvola_deno)](https://codecov.io/gh/tsirysndr/mvola_deno)
 
 [MVola](https://www.mvola.mg/devportal) Deno client library.
 
@@ -10,10 +12,7 @@
 Import the module and initialize the Client class
 
 ```typescript
-import {
-  Client,
-  SANDBOX_URL,
-} from "https://deno.land/x/mvola@0.0.4/mod.ts";
+import { Client, SANDBOX_URL } from "https://deno.land/x/mvola@0.0.4/mod.ts";
 
 const mvola = new Client(SANDBOX_URL);
 ```
@@ -23,7 +22,10 @@ Make calls to the API
 ```typescript
 const consumerKey = Deno.env.get("CONSUMER_KEY");
 const consumerSecret = Deno.env.get("CONSUMER_SECRET");
-const { access_token } = await mvola.auth.generateToken(consumerKey!, consumerSecret!);
+const { access_token } = await mvola.auth.generateToken(
+  consumerKey!,
+  consumerSecret!
+);
 
 mvola.transaction.setAccessToken(access_token);
 mvola.transaction.setOptions({
