@@ -13,7 +13,7 @@ Import the module and initialize the Client class
 import {
   Client,
   SANDBOX_URL,
-} from "https://deno.land/x/mvola@0.0.2/mod.ts";
+} from "https://deno.land/x/mvola@0.0.4/mod.ts";
 
 const mvola = new Client(SANDBOX_URL);
 ```
@@ -23,9 +23,9 @@ Make calls to the API
 ```typescript
 const consumerKey = Deno.env.get("CONSUMER_KEY");
 const consumerSecret = Deno.env.get("CONSUMER_SECRET");
-const res = await mvola.auth.generateToken(consumerKey!, consumerSecret!);
+const { access_token } = await mvola.auth.generateToken(consumerKey!, consumerSecret!);
 
-mvola.transaction.setAccessToken(data.access_token);
+mvola.transaction.setAccessToken(access_token);
 mvola.transaction.setOptions({
   version: "1.0",
   correlationId: crypto.randomUUID(),
