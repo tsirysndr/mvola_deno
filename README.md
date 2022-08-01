@@ -32,7 +32,7 @@ mvola.transaction.setOptions({
   version: "1.0",
   correlationId: crypto.randomUUID(),
   userLanguage: "FR",
-  userAccountIdentifier: "msisdn;0343500003",
+  userAccountIdentifier: "msisdn;0343500004",
   partnerName: "TestMVola",
 });
 
