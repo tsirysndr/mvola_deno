@@ -4,6 +4,7 @@
 ![deno compatibility](https://shield.deno.dev/deno/^1.22)
 [![](https://img.shields.io/github/workflow/status/tsirysndr/mvola_deno/CI)](https://github.com/tsirysndr/mvola_deno/actions)
 [![](https://img.shields.io/codecov/c/gh/tsirysndr/mvola_deno)](https://codecov.io/gh/tsirysndr/mvola_deno)
+![GitHub last commit](https://img.shields.io/github/last-commit/tsirysndr/mvola_deno)
 
 [MVola](https://www.mvola.mg/devportal) Deno client library.
 
